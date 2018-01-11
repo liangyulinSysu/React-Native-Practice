@@ -4,12 +4,19 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
   TouchableOpacity
 } from 'react-native';
 
 class Page2 extends Component<{}> {
   static navigationOptions = {
-    tabBarLabel: 'Page2'
+    tabBarLabel: 'Page2',
+    tabBarIcon:({tintColor}) => (
+      <Image
+        source={require("../Images/page2.png")}
+        style={{width:25, height:25, tintColor:tintColor}}
+      />
+    )
   };
 
   onPress = (text) => {
@@ -43,7 +50,9 @@ var styles = StyleSheet.create({
     height: 50,
     borderWidth: 1,
     borderColor: "white",
-    borderRadius: 4
+    borderRadius: 4,
+    justifyContent: "center",
+    alignItems: "center"
   }
 });
 

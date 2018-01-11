@@ -4,12 +4,19 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  Image,
 } from 'react-native';
 
 class Page1 extends Component<{}> {
   static navigationOptions = {
-    tabBarLabel: 'Page1'
+    tabBarLabel: 'Page1',
+    tabBarIcon: ({tintColor}) => (
+      <Image
+        source={require('../Images/page1.png')}
+        style={{tintColor: tintColor, width: 25, height:25}}
+      ></Image>
+    ),
   };
 
   onPress = () => {

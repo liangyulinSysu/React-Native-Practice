@@ -15,11 +15,16 @@ import {StackNavigator, TabNavigator} from 'react-navigation';
 
 var Page1 = require("./View/Page1");
 var Page2 = require("./View/Page2");
+var Page3 = require("./View/Page3");
+var Page4 = require("./View/Page4");
+var Detail = require("./View/Detail");
 
-export default App = TabNavigator(
+const MainView = TabNavigator(
   {
-    Home: {screen : Page1},
-    Second: {screen : Page2}
+    Page1: {screen : Page1},
+    Page2: {screen : Page2},
+    Page3: {screen : Page3},
+    Page4: {screen : Page4}
   },
   {
     tabBarPosition: 'bottom',
@@ -29,6 +34,13 @@ export default App = TabNavigator(
     },
   }
 );
+
+export default App = StackNavigator(
+  {
+    Home: {screen : MainView},
+    Detail: {screen : Detail}
+  }
+)
 
 const styles = StyleSheet.create({
   container: {

@@ -9,12 +9,12 @@ import {
 
 class Page1 extends Component<{}> {
   static navigationOptions = {
-    tabBarLabel: 'Home'
+    tabBarLabel: 'Page1'
   };
 
   onPress = () => {
     var { navigate } = this.props.navigation;
-    navigate('Second', {user : "haha"});
+    navigate('Detail', {user : "haha"});
   }
 
   render(){

@@ -13,27 +13,9 @@ import {
 } from 'react-native';
 import {StackNavigator, TabNavigator} from 'react-navigation';
 
-var Page1 = require("./View/Page1");
-var Page2 = require("./View/Page2");
-var Page3 = require("./View/Page3");
-var Page4 = require("./View/Page4");
-var Detail = require("./View/Detail");
-
-const MainView = TabNavigator(
-  {
-    Page1: {screen : Page1},
-    Page2: {screen : Page2},
-    Page3: {screen : Page3},
-    Page4: {screen : Page4}
-  },
-  {
-    tabBarPosition: 'bottom',
-    animationEnabled: true,
-    tabBarOptions: {
-      activeTintColor: '#e91e63',
-    },
-  }
-);
+import MainView from "./View/TabBarView";
+import Detail from "./View/Detail";
+// var Detail = require("./View/Detail");
 
 export default App = StackNavigator(
   {

@@ -9,7 +9,7 @@ import {
 
 class Page3 extends Component<{}> {
   static navigationOptions = {
-    tabBarLabel: 'Home'
+    tabBarLabel: 'Page3'
   };
 
   onPress = () => {

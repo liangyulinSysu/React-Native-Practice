@@ -8,8 +8,13 @@ import {
 } from 'react-native';
 
 class Page1 extends Component<{}> {
+  static navigationOptions = {
+    tabBarLabel: 'Home'
+  };
+
   onPress = () => {
-    alert("点击了page1的跳转下一页");
+    var { navigate } = this.props.navigation;
+    navigate('Second', {user : "haha"});
   }
 
   render(){

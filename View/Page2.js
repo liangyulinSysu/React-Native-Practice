@@ -8,6 +8,10 @@ import {
 } from 'react-native';
 
 class Page2 extends Component<{}> {
+  static navigationOptions = {
+    tabBarLabel: 'Profile'
+  };
+
   onPress = (text) => {
     alert(text);
   }

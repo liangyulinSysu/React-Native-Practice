@@ -9,7 +9,8 @@ import {
 
 class Detail extends Component<{}> {
   static navigationOptions = {
-    title : "Home"
+    title : "Home",
+    headerMode : "float",
   };
 
   onPress = () => {

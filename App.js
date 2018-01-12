@@ -15,13 +15,17 @@ import {StackNavigator, TabNavigator} from 'react-navigation';
 
 import MainView from "./View/TabBarView";
 import Detail from "./View/Detail";
-// var Detail = require("./View/Detail");
 
 export default App = StackNavigator(
   {
-    Home: {screen : MainView},
+    Home: {
+      screen : MainView,
+      navigationOptions : {
+        header: null,
+      }
+    },
     Detail: {screen : Detail}
-  }
+  },
 )
 
 const styles = StyleSheet.create({

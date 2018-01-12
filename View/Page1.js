@@ -40,7 +40,8 @@ var styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#FFEFD5"
+    backgroundColor: "#FFEFD5",
+    flexDirection: "row",
   },
   fontStyle : {
     fontSize: 20,

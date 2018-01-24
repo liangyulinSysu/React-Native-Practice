@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './ReduxProj/App';
+import App from './Manager/App';
 
 AppRegistry.registerComponent('Eve', () => App);
